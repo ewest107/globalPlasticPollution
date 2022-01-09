@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>An Overview of Plastic Pollution Today</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+    </head>
+    <body style="background-color:rgb(255, 249, 241);">
+
+        
+        <div id="container">
+            <div id="Title">
+                <h2>An Overview of Plastic Pollution Today</h2>
+                <p>By Eli West</p>
+            </div>
+            <br>
+            <div id=text1>
+                <p>
+                    Plastic waste around the globe is an increasingly urgent environmental issue. Landfills, waterways, and even our food supplies
+                    have become polluted with plastics - both <a href="https://encyclopedia.pub/3018" target="_blank">macro</a> and <a href="https://en.wikipedia.org/wiki/Microplastics" target="_blank">micro.</a>
+                    Communicating information about plastic waste can lead to behavioral changes at the individual level and policy changes at the governmental level.
+                    <br><br>
+                    This scatterplot measures plastic waste (in kg/person/day) on the x axis and GDP per capita (in USD/year) on the y axis for 15 selected countries. 
+                    Each circle represents a country, and the size of the circle represents that country's annually generated plastic waste. The color of each circle represents the continent 
+                    that country is in. Among these 15 countries are some of the world's biggest polluters, smallest polluters per capita, and wealthiest nations. 
+                    <strong>Please note: these plastic waste data do not account for recycling, incineration, or other waste management processes after primary use.</strong>
+                </p>
+            </div>
+            
+            
+            
+            <div id = twoColumnFlex>
+                
+                <figure id="chart"></figure>
+                <div id = flexButtons>
+                    <button id="population">Change Circle Size to Represent Country Population</button> <br>
+                    <button id="totalwaste">Revert Circle Size back to Country's Plastic Waste/Year</button>
+                </div>
+                
+            </div>
+
+            <br>
+
+            <div id=text2>
+                <p>
+                    This visualization reveals some surprising findings about specific countries’ plastic waste generation.
+                    <ul>
+                        <li>India, in the lower left corner, has an exceptionally low per capita plastic waste measure, but is still a significant polluter given its large population (1.4 billion people as of 2021).</li>
+                        <li>China is the world's largest generator of plastics, but has relatively low per capita plastic waste and GDP per capita.</li>
+                        <li>The US has high plastic waste per capita, high GDP per capita, and high total plastic pollution.</li>
+                        <li>At the top right of the plot, Kuwait has the highest per capita measures of any country.</li>
+                        <li>There seems to be an overall correlation between plastic waste per capita and GDP per capita, but more data points are needed to strengthen this possible correlation. 
+                            Denmark and Canada lie far outside this trend, with low per capita plastic waste given its high GDP per capita measure.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div id=text3>
+                <p>
+                    These data were found on the wesbite <a href="https://ourworldindata.org/plastic-pollution" target="_blank">Our World in Data</a>, but the original 
+                    source is <a href="https://www.science.org/doi/10.1126/science.1260352" target="_blank">this paper</a> published in the journal Science.
+                    The GDP per capita data were found on <a href="https://www.gapminder.org/" target="_blank">gapminder.org</a>.  
+                </p>
+            </div>
+
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
